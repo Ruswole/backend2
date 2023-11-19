@@ -24,7 +24,6 @@ class CarouselItemsController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      */
