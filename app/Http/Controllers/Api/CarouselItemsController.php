@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\CarouselItems;
 use App\Http\Controllers\Controller;
 
-
 class CarouselItemsController extends Controller
 {
     /**
@@ -24,12 +23,13 @@ class CarouselItemsController extends Controller
     {
         //
     }
+
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        //
+       return CarouselItems::findOrFail($id);;
     }
 
     /**
